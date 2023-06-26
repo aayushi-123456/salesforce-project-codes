@@ -1,0 +1,22 @@
+<template>
+    <div class="slds-m-around_medium">
+      
+      <div class="slds-m-bottom_small">
+          <lightning-input type="text"
+             value={searchkey}
+             label="Contact Name"
+             onkeyup={myFunction}
+             ></lightning-input>
+       </div>
+       
+        </div>
+    <div style="height: 300px;">
+        <lightning-datatable
+                key-field="id"
+                data={data}
+                columns={columns}>
+        </lightning-datatable>
+    </div>
+
+
+</template>

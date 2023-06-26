@@ -1,0 +1,14 @@
+<template>
+   <div class="form-container">
+      <div class="form-fields">
+         <lightning-input type="text" label="Account Name" value={accountName}></lightning-input>
+         <lightning-input type="text" label="Industry" value={industry}></lightning-input>
+         <lightning-input type="text" label="Phone" value={phone}></lightning-input>
+         <lightning-input type="text" label="Website" value={website}></lightning-input>
+      </div>
+      <div class="form-actions">
+         <lightning-button label="Save" onclick={handleSave}></lightning-button>
+         <lightning-button label="Cancel" onclick={handleCancel}></lightning-button>
+      </div>
+   </div>
+</template>
